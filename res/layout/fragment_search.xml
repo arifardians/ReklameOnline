@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect_text_field_blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/fragment_search_input_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/fragment_search_btn_search"
+            android:background="@drawable/rect_text_field_blue"
+            android:ems="10"
+            android:hint="@string/cari_reklame"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/fragment_search_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fragment_search_input_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/fragment_search_input_text"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rect_blue_flat_selector"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/ic_search_blue_mini" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_search_text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/cari_reklame"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blue_primary" />
+
+    <ListView
+        android:id="@+id/fragment_search_list_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp" >
+
+    </ListView>
+
+</LinearLayout>

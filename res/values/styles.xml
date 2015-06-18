@@ -1,0 +1,26 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light" />
+
+   
+    <!-- style by arif -->
+    <style name="ReklameMaterial" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabMatStyle</item>
+    </style>
+    
+    
+    
+    <!-- ActionBar Material tabs text styles -->
+    <style name="ActionBarTabMatStyle"
+        parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:divider">@color/blue_text_placeholder</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    
+    <!-- Popup click marker animation -->
+    <style name="PopupAnimaitonBottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/in_from_bottm</item>
+        <item name="android:windowExitAnimation">@anim/out_from_bottom</item>
+    </style>
+    
+ </resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <!-- Thumbnail Image -->
+    <!--<com.android.volley.toolbox.NetworkImageView-->
+        <!--android:id="@+id/thumbnail"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginRight="8dp" />-->
+
+    <!-- Movie Title -->
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/sale_icon"
+        android:src="@drawable/ic_sale" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:singleLine="true"
+        android:text="@string/sample_company"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/sample_address"
+        android:textColor="@android:color/darker_gray"
+        android:singleLine="true"
+        android:textSize="@dimen/alamat" />
+
+    <TextView
+        android:id="@+id/no_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alamat"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:singleLine="true"
+        android:text="@string/sample_reklame_code"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/no_form" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/thumbnail"/>
+
+</RelativeLayout>

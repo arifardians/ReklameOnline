@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nusaraya.activity.LoginNewActivity" >
+
+    <ImageView
+        android:id="@+id/action_bar_mat_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_new_input_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/logo_reklame"
+        android:src="@drawable/logo_reklame" />
+
+    <Button
+        android:id="@+id/login_new_button_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_new_input_password"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/login_new_input_password"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/rect_blue_flat_selector"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/login"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/login_new_input_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_new_button_login"
+        android:layout_alignLeft="@+id/login_new_input_username"
+        android:layout_alignRight="@+id/login_new_input_username"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rect_text_field_blue"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/blue_primary"
+        android:textColorHint="@color/blue_text_placeholder" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/login_new_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_new_input_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rect_text_field_blue"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/blue_primary"
+        android:textColorHint="@color/blue_text_placeholder" >
+
+        	<requestFocus />
+        </EditText>
+
+</RelativeLayout>

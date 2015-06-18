@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_border_blue_flat_normal"
+    android:contentDescription="@string/logo_reklame"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_billboard_blue" />
+
+        <TextView
+            android:id="@+id/popup_detail_text_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/sample_company"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blue_primary" />
+
+        <TextView
+            android:id="@+id/popup_detail_text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/popup_detail_text_company_name"
+            android:layout_below="@+id/popup_detail_text_company_name"
+            android:text="@string/sample_address"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue_text_placeholder" />
+
+        <TextView
+            android:id="@+id/popup_detail_text_no_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popup_detail_text_address"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/sample_reklame_code"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue_text_placeholder" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/popup_detail_button_detail"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/rect_blue_flat_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Detail"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/popup_detail_button_close"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/popup_detail_button_detail"
+            android:background="@drawable/rect_grey_2_flat_selector"
+            android:text="Close" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/fragment_home_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_home_footer"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp" >
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/fragment_home_footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rect_text_field_blue" >
+
+        <Button
+            android:id="@+id/fragment_home_btn_next"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rect_border_blue_flat_selector"
+            android:drawableLeft="@drawable/ic_item_next_mini"
+            android:paddingLeft="5dp"
+            android:drawablePadding="5dp" />
+
+        <Button
+            android:id="@+id/fragment_home_btn_prev"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/fragment_home_btn_next"
+            android:layout_alignBottom="@+id/fragment_home_btn_next"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fragment_home_btn_next"
+            android:background="@drawable/rect_border_blue_flat_selector"
+            android:drawableLeft="@drawable/ic_item_back_mini" />
+
+        <TextView
+            android:id="@+id/fragment_home_text_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="36dp"
+            android:layout_toLeftOf="@+id/fragment_home_btn_prev"
+            android:text="@string/sample_text_paging"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blue_text_placeholder" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
